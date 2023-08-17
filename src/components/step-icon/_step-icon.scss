@@ -1,0 +1,12 @@
+.step-icon {
+	&__container {
+		width: 100%;
+		border: 1px solid $light-blue;
+	}
+	& span {
+		font: {
+			size: 1.5rem;
+			family: ubuntu-medium;
+		}
+	}
+}

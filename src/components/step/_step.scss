@@ -1,0 +1,15 @@
+@import "../step-icon/step-icon";
+@import "../step-content/step-content";
+
+.step {
+	&__container {
+		display: flex;
+		align-items: center;
+		width: 60%;
+		justify-content: flex-start;
+
+		& > *:first-child {
+			margin-right: auto;
+		}
+	}
+}
