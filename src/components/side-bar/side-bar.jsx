@@ -15,12 +15,12 @@ const SideBar = () => {
 			isActive: ""
 		},
 		{
-			number: 2,
+			number: 3,
 			info: "add-ons",
 			isActive: ""
 		},
 		{
-			number: 2,
+			number: 4,
 			info: "summary",
 			isActive: ""
 		}
@@ -30,7 +30,7 @@ const SideBar = () => {
 			<div className="sidebar__bg">
 				<SideBarBg />
 			</div>
-			<div className="steps">
+			<div className="sidebar__steps">
 				{steps.map((step, index) => (
 					<Step stepContent={step} key={index} />
 				))}

@@ -1,0 +1,50 @@
+.info {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		width: 100%;
+
+		&-item {
+			margin-bottom: 2rem;
+			width: 80%;
+
+			display: flex;
+			flex-direction: column;
+			align-self: flex-start;
+
+			&--header {
+				display: flex;
+				align-items: center;
+				margin-bottom: 0.5rem;
+				& > *:first-child {
+					margin-right: auto;
+				}
+
+				& > label {
+					color: $marine-blue;
+					font: {
+						size: 1.5rem;
+						family: ubuntu-medium;
+						weight: 500;
+					}
+				}
+			}
+			&--input {
+				width: 100%;
+				padding: 1.5rem 1rem;
+				border-radius: 10px;
+
+				background-color: transparent;
+				border: 1px solid $cool-gray;
+			}
+		}
+	}
+}

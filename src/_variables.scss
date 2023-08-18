@@ -12,12 +12,15 @@ $white: hsl(0, 0%, 100%);
 @font-face {
 	font-family: ubuntu-regular;
 	src: url(./assets/fonts/Ubuntu-Regular.ttf);
+	font-weight: 400;
 }
 @font-face {
 	font-family: ubuntu-medium;
 	src: url(./assets/fonts/Ubuntu-Medium.ttf);
+	font-weight: 500;
 }
 @font-face {
 	font-family: ubuntu-bold;
 	src: url(./assets/fonts/Ubuntu-Bold.ttf);
+	font-weight: 700;
 }

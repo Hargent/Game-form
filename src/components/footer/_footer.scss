@@ -1,0 +1,12 @@
+.footer {
+	&__container {
+		display: flex;
+		align-items: flex-end;
+
+		width: 80%;
+
+		& > *:first-child {
+			margin-right: auto;
+		}
+	}
+}

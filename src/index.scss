@@ -1,10 +1,11 @@
 @import "./variables";
-
+@import "./mixin";
 /* CSS RESETS */
 * {
 	box-sizing: inherit;
 }
-* *::before,
+*,
+*::before,
 *::after {
 	margin: 0;
 	padding: 0;
@@ -17,5 +18,7 @@ body {
 	box-sizing: inherit;
 	-webkit-font-smoothing: antialiased;
 	background-color: $magnolia;
+	width: 100%;
+	@include center-component;
 }
 @import "./app/app";

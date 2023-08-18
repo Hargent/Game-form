@@ -1,0 +1,13 @@
+.button {
+	padding: 1.5rem 2rem;
+	border-radius: 10px;
+	text-transform: capitalize;
+	background-color: $marine-blue;
+	color: $light-gray;
+
+	font: {
+		size: 1.5rem;
+		family: ubuntu-medium;
+		weight: 500;
+	}
+}

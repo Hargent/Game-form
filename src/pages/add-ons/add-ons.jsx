@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const AddOns = () => {
-  return (
-    <div>AddOns</div>
-  )
-}
+	return <div></div>;
+};
 
-export default AddOns
+export default AddOns;

@@ -1,0 +1,34 @@
+.plan-card {
+	&__container {
+		width: 100%;
+		// background-color: blue;
+		border-radius: 10px;
+		border: 1px solid $light-gray;
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 2rem;
+		& > *:not(:first-child) {
+			margin-bottom: 1rem;
+		}
+		& > *:last-child {
+			margin-bottom: 0;
+		}
+		&-active {
+			border-color: red;
+		}
+	}
+	&-icon {
+		margin-bottom: 5rem;
+	}
+	&-type {
+		text-transform: capitalize;
+		color: $marine-blue;
+		font: {
+			size: 2rem;
+			family: ubuntu-bold;
+			weight: 700;
+		}
+	}
+}

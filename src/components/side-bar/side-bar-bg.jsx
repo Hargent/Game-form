@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-
 import { ReactComponent as Desktop } from "../../assets/images/bg-sidebar-desktop.svg";
 import { ReactComponent as Mobile } from "../../assets/images/bg-sidebar-mobile.svg";
+import React from "react";
 import useMediaQuery from "../../hooks/use-media-query";
 
 const SideBarBg = () => {
@@ -11,6 +10,7 @@ const SideBarBg = () => {
 	});
 
 	return isMobile ? <Mobile /> : <Desktop />;
+	// return isMobile ? <Mobile /> : <Desktop />;
 };
 
 export default SideBarBg;

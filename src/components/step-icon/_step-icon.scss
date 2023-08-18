@@ -1,12 +1,27 @@
 .step-icon {
 	&__container {
-		width: 100%;
-		border: 1px solid $light-blue;
+		width: 3.5rem;
+		height: 3.5rem;
+		text-align: center;
+		border-radius: 50%;
+		border: 2px solid $light-blue;
+
+		position: relative;
 	}
-	& span {
+	&__content {
+		@include center-component;
+
 		font: {
 			size: 1.5rem;
-			family: ubuntu-medium;
+			family: ubuntu-bold;
+			weight: bold;
+		}
+		color: $light-blue;
+	}
+	&__active {
+		background-color: $light-blue;
+		span {
+			color: $marine-blue;
 		}
 	}
 }

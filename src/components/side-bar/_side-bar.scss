@@ -1,4 +1,5 @@
 @import "../step/step";
+
 .sidebar {
 	&__container {
 		display: flex;
@@ -6,9 +7,17 @@
 		align-items: flex-start;
 		justify-content: flex-start;
 
-		
-		& > *:not(:last-child) {
-			margin-bottom: 3rem;
-		}
+		position: relative;
+	}
+	&__bg {
+		width: 30%;
+	}
+	&__steps {
+		// @include center-component;
+		position: absolute;
+		top: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
 	}
 }

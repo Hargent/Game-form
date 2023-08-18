@@ -7,10 +7,13 @@ import PageNotFound from "../pages/page-not-found/page-not-found";
 import Plans from "../pages/plans/plans";
 import React from "react";
 import Summary from "../pages/summary/summary";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 
 const Navigation = () => {
 	return (
 		<BrowserRouter>
+			<Header />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="info" element={<Info />} />
@@ -19,6 +22,7 @@ const Navigation = () => {
 				<Route path="summary" element={<Summary />} />
 				<Route path="*" element={<PageNotFound />} />
 			</Routes>
+			<Footer />
 		</BrowserRouter>
 	);
 };

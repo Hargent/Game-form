@@ -3,13 +3,18 @@
 
 .step {
 	&__container {
-		display: flex;
-		align-items: center;
-		width: 60%;
-		justify-content: flex-start;
+		display: grid;
+		grid-template-columns: repeat(9, 1fr);
 
+		width: 80%;
+		// background-color: red;
+		column-gap: 2rem;
+		margin-bottom: 4rem;
 		& > *:first-child {
-			margin-right: auto;
+			grid-column: 1/3;
+		}
+		& > *:last-child {
+			grid-column: 3/-1;
 		}
 	}
 }
