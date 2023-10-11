@@ -8,14 +8,14 @@ import { useThanksContext } from "./thanks-context";
 const Thanks = () => {
   const { pageData, userData } = useThanksContext();
   console.log(userData);
+  const navigate = useNavigate();
   useEffect(() => {
     if (!userData.subConfirmed) {
       navigate("/", {
         replace: true
       });
     }
-  }, []);
-  const navigate = useNavigate();
+  }, [navigate, userData.subConfirmed]);
 
   return (
     <>

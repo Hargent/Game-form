@@ -32,7 +32,7 @@ const Plans = () => {
   };
   useEffect(() => {
     handleUserPlans(toggle);
-  }, [toggle]);
+  }, [toggle,handleUserPlans]);
 
   const submitPageData = () => {
     submitPlansData(checkedItem);
