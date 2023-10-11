@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import { DURATION_PRICE } from "../../utils/constants/duration-price";
 import checkIcon from "../../assets/images/icon-checkmark.svg";

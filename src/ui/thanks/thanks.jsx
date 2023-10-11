@@ -14,7 +14,7 @@ const Thanks = () => {
         replace: true
       });
     }
-  }, []);
+  }, [navigate,userData.subConfirmed]);
   const navigate = useNavigate();
 
   return (
