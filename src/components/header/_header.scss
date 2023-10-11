@@ -1,29 +1,30 @@
 .header {
-	&__container {
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		justify-content: center;
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
 
-		& > *:first-child {
-			margin-bottom: 1rem;
-		}
-		& > h1 {
-			color: $marine-blue;
-			font: {
-				size: 3rem;
-				family: ubuntu-bold;
-				weight: 700;
-			}
-		}
-		& > p {
-			color: $cool-gray;
+    margin-bottom: 2rem;
+    & > *:first-child {
+      margin-bottom: 1rem;
+    }
+    & > h1 {
+      color: $marine-blue;
+      font: {
+        size: 3rem;
+        family: ubuntu-bold;
+        weight: 700;
+      }
+    }
+    & > p {
+      color: $cool-gray;
 
-			font: {
-				size: 1.5rem;
-				family: ubuntu-regular;
-				weight: 400;
-			}
-		}
-	}
+      font: {
+        size: 1.5rem;
+        family: ubuntu-regular;
+        weight: 400;
+      }
+    }
+  }
 }

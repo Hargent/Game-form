@@ -21,4 +21,4 @@ body {
 	width: 100%;
 	@include center-component;
 }
-@import "./app/app";
+@import "./ui/app-layout/app-layout"

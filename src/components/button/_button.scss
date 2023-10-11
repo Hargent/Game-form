@@ -1,13 +1,46 @@
-.button {
-	padding: 1.5rem 2rem;
-	border-radius: 10px;
-	text-transform: capitalize;
-	background-color: $marine-blue;
-	color: $light-gray;
+.button-front {
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  background-color: $marine-blue;
+  color: $light-gray;
+  cursor: pointer;
 
-	font: {
-		size: 1.5rem;
-		family: ubuntu-medium;
-		weight: 500;
-	}
+  font: {
+    size: 1.5rem;
+    family: ubuntu-medium;
+    weight: 500;
+  }
+}
+.button-back {
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+
+  text-transform: capitalize;
+  background-color: transparent;
+  color: $marine-blue;
+
+  font: {
+    size: 1.5rem;
+    family: ubuntu-medium;
+    weight: 500;
+  }
+}
+.button-confirm {
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+  background-color: $purplish-blue;
+  color: $light-gray;
+
+  font: {
+    size: 1.5rem;
+    family: ubuntu-medium;
+    weight: 500;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
 }

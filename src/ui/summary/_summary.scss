@@ -1,0 +1,109 @@
+.summary {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &__details {
+    background-color: $magnolia;
+    width: 100%;
+    padding: 0 2rem;
+    border-radius: 10px;
+    & > *:not(:last-child) {
+      border-bottom: 1px solid $cool-gray;
+    }
+    &-plans {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 2rem 0;
+      & figure {
+        font-family: ubuntu-bold;
+        font-size: 2rem;
+        color: $marine-blue;
+      }
+      &-plan {
+        & p {
+          font-family: ubuntu-bold;
+          font-size: 2rem;
+          color: $marine-blue;
+          padding-bottom: 1rem;
+        }
+        & a {
+          text-decoration: underline;
+          font-family: ubuntu-regular;
+          font-size: 1.5rem;
+          text-transform: capitalize;
+          color: $cool-gray;
+        }
+      }
+    }
+    &-addons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 2rem 0;
+
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+      &-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > *:first-child {
+          margin-right: auto;
+        }
+
+        & p {
+          font-family: ubuntu-regular;
+          font-size: 1.75rem;
+          color: $cool-gray;
+          & span {
+            text-transform: capitalize;
+          }
+        }
+        & figure {
+          color: $marine-blue;
+          font-size: 2rem;
+          font-family: ubuntu-regular;
+        }
+      }
+    }
+  }
+  &__total {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & p {
+      font-family: ubuntu-regular;
+      font-size: 1.75rem;
+      color: $cool-gray;
+    }
+    & figure {
+      font-family: ubuntu-bold;
+      font-size: 2.5rem;
+      color: $purplish-blue;
+    }
+  }
+}
+.no-data {
+  font-size: 2rem;
+  font-family: ubuntu-medium;
+  color: $marine-blue;
+  padding: 2rem 0;
+
+  & a {
+    color: $purplish-blue;
+    font-style: italic;
+    padding: 0 1rem;
+  }
+}

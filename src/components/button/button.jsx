@@ -1,11 +1,25 @@
 import React from "react";
 
-const Button = ({ children, additionalClass = "", onClick = null }) => {
-	return (
-		<button className={`button btn-${additionalClass}`} onClick={onClick}>
-			{children}
-		</button>
-	);
+const ButtonFront = ({
+  children,
+  dir,
+  type,
+  onClick,
+  formName,
+  additionalClass,
+  disabled
+}) => {
+  return (
+    <button
+      form={formName}
+      type={type}
+      className={`button-${dir} ${additionalClass}`}
+      onClick={onClick}
+      disabled={disabled?disabled:false}
+    >
+      {children}
+    </button>
+  );
 };
 
-export default Button;
+export default ButtonFront;

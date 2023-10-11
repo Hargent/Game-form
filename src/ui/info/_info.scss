@@ -1,0 +1,61 @@
+.info {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+
+    &-item {
+      margin-bottom: 2rem;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+
+      &--header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        & > *:first-child {
+          margin-right: auto;
+        }
+
+        & > label {
+          color: $marine-blue;
+          font: {
+            size: 1.5rem;
+            family: ubuntu-medium;
+            weight: 500;
+          }
+        }
+        & span {
+          color: rgb(236, 90, 90);
+          font: {
+            size: 1.2rem;
+            family: ubuntu-medium;
+            weight: 500;
+          }
+          @media only screen and (min-width: 1200px) {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      &--input {
+        width: 100%;
+        padding: 1.5rem 1rem;
+        border-radius: 10px;
+
+        background-color: transparent;
+        border: 1px solid $cool-gray;
+      }
+    }
+  }
+}

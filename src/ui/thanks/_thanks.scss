@@ -1,0 +1,16 @@
+.thanks {
+  &__container {
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    line-height: 2;
+    & .here {
+      font-style: italic;
+      text-decoration: underline;
+      color: $purplish-blue;
+    }
+  }
+}
